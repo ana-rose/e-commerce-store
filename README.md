@@ -8,6 +8,7 @@ Home Page
 - Grid of products
 - Carousel of featured products
 - Product Page (with id parameter)
+
 All products should be stored in Firestore, you should store the following information:
 - Quantity
 - Variants (could be colors, sizes, etc)
@@ -23,6 +24,7 @@ Using Firestore and react create, a cart system.Create a cart page in your react
 - List of products in cart
 - ability to change quantity of products in cart
 - ability to remove items from cart
+
 Make sure you site is scope to one category of products
 
 
