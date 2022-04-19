@@ -1,0 +1,43 @@
+$sphone: 281px;
+$phone: 541px;
+$tablet: 768px;
+$laptop: 1025px;
+
+@mixin sphone {
+    @media only screen and (max-width: $sphone) {
+        @content;
+    }
+}
+@mixin phone {
+    @media only screen and (min-width: $sphone) and (max-width: $phone) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: $phone) and (max-width: $laptop) {
+        @content;
+    }
+}
+
+.ProductGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 30px 10px;
+    @include sphone {
+        grid-template-columns: 1fr;
+    }
+    @include phone {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include tablet {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+img {
+    max-height: 200px;
+
+    @include phone {
+        max-width: 80vw;
+    }
+}

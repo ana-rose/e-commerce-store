@@ -1,0 +1,44 @@
+.Card {
+    border: 1px solid #dcd3ba;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.FaveIcon {
+    margin-bottom: 30px;
+    &__On {
+        margin-bottom: 20px;
+        color: green;
+    }
+    &__Off {
+        margin-bottom: 20px;
+        color: goldenrod;
+    }
+}
+p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+select {
+    width: 150px;
+}
+.AddToFaves {
+    font-size: 12px;
+}
+.AddToCart {
+    background-color: #dcd3ba;
+    font-family: "Nanum Gothic", sans-serif;
+    margin-top: 20px;
+    border: none;
+    padding: 10px 20px;
+}
+.ParaLink {
+    font-size: 16px;
+    padding: 0;
+    margin: 15px 0 0 0;
+
+    &:hover {
+        color: #dcd3ba;
+    }
+}

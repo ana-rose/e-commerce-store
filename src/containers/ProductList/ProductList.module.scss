@@ -1,0 +1,25 @@
+$phone: 541px;
+
+@mixin phone {
+    @media only screen and (max-width: $phone) {
+        @content;
+    }
+}
+
+.ProductList {
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+.ProductsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 20px;
+    @include phone {
+        grid-template-columns: 1fr;
+    }
+}

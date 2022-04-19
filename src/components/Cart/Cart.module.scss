@@ -1,0 +1,36 @@
+$phone: 541px;
+
+@mixin phone {
+    @media only screen and (max-width: $phone) {
+        @content;
+    }
+}
+
+.Cart {
+    font-family: "Nanum Gothic", sans-serif;
+
+    &__Subtitle {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+.CartItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 40px 20px;
+    @include phone {
+        grid-template-columns: 1fr;
+    }
+}
+.CartItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.QtyBtn {
+    background-color: #dcd3ba;
+    border: none;
+    margin: 10px;
+    padding: 5px 20px;
+}

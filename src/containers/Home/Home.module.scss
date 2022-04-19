@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+$phone: 541px;
+
+@mixin phone {
+    @media only screen and (max-width: $phone) {
+        @content;
+    }
+}
+
+.Home {
+    font-family: "Nanum Gothic", sans-serif;
+    background-color: #ebeae5;
+    text-align: center;
+
+    &__FirstBlock {
+        padding: 50px 20px;
+    }
+
+    &__Btn {
+        background-color: black;
+        color: white;
+        font-family: "Nanum Gothic", sans-serif;
+        border: none;
+        padding: 20px 40px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ebeae5;
+}
+.CarouselBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dcd3ba;
+    margin: 40px 0 0 0;
+    padding: 40px 0;
+    @include phone {
+        flex-direction: column;
+    }
+
+    &__Text {
+        padding: 30px;
+    }
+}

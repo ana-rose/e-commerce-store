@@ -1,0 +1,30 @@
+.ProductInfo {
+    font-family: "Nanum Gothic", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+
+    &__Title {
+        font-size: 30px;
+        font-family: "Nanum Gothic", sans-serif;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__Info {
+        text-align: center;
+    }
+
+    &__Dimensions {
+        font-size: 12px;
+    }
+
+    &__Btn {
+        background-color: #dcd3ba;
+        font-family: "Nanum Gothic", sans-serif;
+        margin-top: 20px;
+        border: none;
+        padding: 10px 20px;
+    }
+}
